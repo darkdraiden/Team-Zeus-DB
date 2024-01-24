@@ -7,5 +7,6 @@ task_desc varchar(128),
 time_stamp timestamp on update current_timestamp,
 task_status varchar(16),
 board_id int,
-foreign key (board_id) references home_board(board_id)
+foreign key (board_id) references home_board(board_id),
+assigned_to varchar(32)
 );
